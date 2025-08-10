@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlienMedia - Social Media Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'alien-purple': '#8B5CF6',
+                        'alien-purple-dark': '#7C3AED',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div id="logoContainer" class="flex items-center">
+                        <img id="companyLogo" src="" alt="AlienMedia Logo" class="h-12 w-auto mr-3 hidden rounded-lg">
+                        <div class="bg-alien-purple text-white px-4 py-2 rounded-lg font-bold text-xl">
+                            AlienMedia
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-alien-purple px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#services" class="text-gray-700 hover:text-alien-purple px-3 py-2 rounded-md text-sm font-medium transition">Services</a>
+                        <a href="#portfolio" class="text-gray-700 hover:text-alien-purple px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
+                        <a href="#contact" class="text-gray-700 hover:text-alien-purple px-3 py-2 rounded-md text-sm font-medium transition">Contact</a>
+                        <button onclick="showAdminLogin()" class="bg-alien-purple text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-alien-purple-dark transition">Admin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 bg-gradient-to-br from-white to-purple-50 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img id="heroLogo" src="" alt="AlienMedia Logo" class="h-24 w-auto mx-auto mb-4 hidden rounded-xl shadow-lg">
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Welcome to <span class="text-alien-purple">AlienMedia</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Your premier social media company specializing in creating engaging content, managing your online presence, and growing your digital footprint.
+                </p>
+                <div class="flex justify-center space-x-4 mb-12">
+                    <a href="tel:+96170123456" class="bg-alien-purple text-white px-8 py-3 rounded-lg font-semibold hover:bg-alien-purple-dark transition">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                    <a href="#contact" class="border-2 border-alien-purple text-alien-purple px-8 py-3 rounded-lg font-semibold hover:bg-alien-purple hover:text-white transition">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="flex justify-center space-x-6">
+                    <a href="https://instagram.com/alienmedia" target="_blank" class="text-alien-purple hover:text-alien-purple-dark text-2xl transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@alienmedia" target="_blank" class="text-alien-purple hover:text-alien-purple-dark text-2xl transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://facebook.com/alienmedia" target="_blank" class="text-alien-purple hover:text-alien-purple-dark text-2xl transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/96170123456" target="_blank" class="text-alien-purple hover:text-alien-purple-dark text-2xl transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Professional social media solutions for your business</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-purple-50 p-8 rounded-xl text-center hover:shadow-lg transition">
+                    <div class="bg-alien-purple text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Video Production</h3>
+                    <p class="text-gray-600">Professional video content creation for all social media platforms</p>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-xl text-center hover:shadow-lg transition">
+                    <div class="bg-alien-purple text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Social Media Management</h3>
+                    <p class="text-gray-600">Complete management of your social media presence and growth</p>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-xl text-center hover:shadow-lg transition">
+                    <div class="bg-alien-purple text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bullhorn text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600">Strategic marketing campaigns to boost your online visibility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
+                <p class="text-xl text-gray-600">Check out our latest video productions</p>
+            </div>
+            
+            <div id="videoGallery" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Videos will be dynamically loaded here -->
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                    <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-play-circle text-4xl text-alien-purple"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Sample Video 1</h3>
+                    <p class="text-gray-600 text-sm">Professional social media content</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                    <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-play-circle text-4xl text-alien-purple"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Sample Video 2</h3>
+                    <p class="text-gray-600 text-sm">Engaging promotional content</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                    <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-play-circle text-4xl text-alien-purple"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Sample Video 3</h3>
+                    <p class="text-gray-600 text-sm">Creative brand storytelling</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600">Get in touch for your social media needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-alien-purple mr-4"></i>
+                            <span>Akkar, Minieh - Korob Fatah Foods Company Street</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-alien-purple mr-4"></i>
+                            <a href="tel:+96170123456" class="hover:text-alien-purple transition">+961 70 123 456</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-alien-purple mr-4"></i>
+                            <span>info@alienmedia.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://instagram.com/alienmedia" target="_blank" class="bg-alien-purple text-white p-3 rounded-full hover:bg-alien-purple-dark transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com/@alienmedia" target="_blank" class="bg-alien-purple text-white p-3 rounded-full hover:bg-alien-purple-dark transition">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://facebook.com/alienmedia" target="_blank" class="bg-alien-purple text-white p-3 rounded-full hover:bg-alien-purple-dark transition">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://wa.me/96170123456" target="_blank" class="bg-alien-purple text-white p-3 rounded-full hover:bg-alien-purple-dark transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-xl">
+                    <form onsubmit="handleContactForm(event)">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-alien-purple text-white py-3 rounded-lg font-semibold hover:bg-alien-purple-dark transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="mb-4">
+                    <img id="footerLogo" src="" alt="AlienMedia Logo" class="h-16 w-auto mx-auto mb-3 hidden rounded-lg">
+                    <div class="bg-alien-purple text-white px-6 py-3 rounded-lg font-bold text-2xl inline-block">
+                        AlienMedia
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-4">Professional Social Media Company</p>
+                <p class="text-gray-500 text-sm">© 2024 AlienMedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-xl max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold mb-6 text-center">Admin Login</h3>
+            <form onsubmit="handleAdminLogin(event)">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Password</label>
+                    <input type="password" id="adminPassword" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent">
+                </div>
+                <div class="flex space-x-4">
+                    <button type="submit" class="flex-1 bg-alien-purple text-white py-2 rounded-lg font-semibold hover:bg-alien-purple-dark transition">
+                        Login
+                    </button>
+                    <button type="button" onclick="hideAdminLogin()" class="flex-1 bg-gray-300 text-gray-700 py-2 rounded-lg font-semibold hover:bg-gray-400 transition">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="fixed inset-0 bg-white hidden z-50 overflow-y-auto">
+        <div class="max-w-6xl mx-auto p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Admin Panel</h2>
+                <button onclick="hideAdminPanel()" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
+                    <i class="fas fa-times mr-2"></i>Close
+                </button>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Logo Management -->
+                <div class="bg-blue-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <i class="fas fa-image mr-2 text-blue-600"></i>Logo Management
+                    </h3>
+                    
+                    <!-- Upload from Gallery -->
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium mb-2">Upload Logo from Gallery</label>
+                        <div class="relative">
+                            <input type="file" id="logoFile" accept="image/*" onchange="handleLogoUpload(event)" class="hidden">
+                            <button type="button" onclick="document.getElementById('logoFile').click()" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition flex items-center justify-center">
+                                <i class="fas fa-camera mr-2"></i>Choose from Gallery
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Or URL Option -->
+                    <div class="text-center text-gray-500 text-sm mb-4">
+                        <span class="bg-blue-50 px-3">OR</span>
+                    </div>
+                    
+                    <form onsubmit="uploadLogoUrl(event)">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Logo URL</label>
+                            <input type="url" id="logoUrl" placeholder="https://example.com/logo.png" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            <i class="fas fa-link mr-2"></i>Add from URL
+                        </button>
+                    </form>
+                    
+                    <div class="mt-4 p-4 bg-white rounded-lg border shadow-sm">
+                        <p class="text-sm text-gray-600 mb-2 font-medium">Current Logo Preview:</p>
+                        <div id="logoPreview" class="flex items-center justify-center h-24 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                            <span class="text-gray-500 text-sm">No logo uploaded</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add Video Form -->
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <i class="fas fa-video mr-2 text-alien-purple"></i>Add New Video
+                    </h3>
+                    <form onsubmit="addVideo(event)">
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Video Title</label>
+                            <input type="text" id="videoTitle" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Video Description</label>
+                            <textarea id="videoDescription" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <!-- Upload from Gallery -->
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Upload Video from Gallery</label>
+                            <div class="relative">
+                                <input type="file" id="videoFile" accept="video/*" onchange="handleVideoUpload(event)" class="hidden">
+                                <button type="button" onclick="document.getElementById('videoFile').click()" class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-purple-600 hover:to-purple-700 transition flex items-center justify-center">
+                                    <i class="fas fa-video mr-2"></i>Choose Video from Gallery
+                                </button>
+                            </div>
+                            <div id="videoPreview" class="mt-3 hidden">
+                                <div class="bg-white p-3 rounded-lg border">
+                                    <p class="text-sm text-gray-600 mb-2">Selected Video:</p>
+                                    <div id="videoInfo" class="text-sm text-gray-800"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Or URL Option -->
+                        <div class="text-center text-gray-500 text-sm mb-4">
+                            <span class="bg-purple-50 px-3">OR</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium mb-2">Video URL (YouTube, Vimeo, etc.)</label>
+                            <input type="url" id="videoUrl" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-alien-purple focus:border-transparent">
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-alien-purple text-white py-2 rounded-lg font-semibold hover:bg-alien-purple-dark transition">
+                            <i class="fas fa-plus mr-2"></i>Add Video
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Manage Videos -->
+                <div class="bg-white border-2 border-purple-100 p-6 rounded-xl">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <i class="fas fa-list mr-2 text-alien-purple"></i>Manage Videos
+                    </h3>
+                    <div id="adminVideoList" class="space-y-4 max-h-96 overflow-y-auto">
+                        <!-- Videos will be listed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Store videos and logo in memory
+        let companyLogo = '';
+        let currentVideoFile = null;
+        let videos = [
+            {
+                id: 1,
+                title: "Sample Video 1",
+                description: "Professional social media content",
+                url: "#",
+                type: "sample"
+            },
+            {
+                id: 2,
+                title: "Sample Video 2", 
+                description: "Engaging promotional content",
+                url: "#",
+                type: "sample"
+            },
+            {
+                id: 3,
+                title: "Sample Video 3",
+                description: "Creative brand storytelling", 
+                url: "#",
+                type: "sample"
+            }
+        ];
+
+        // Admin functions
+        function showAdminLogin() {
+            document.getElementById('adminLoginModal').classList.remove('hidden');
+        }
+
+        function hideAdminLogin() {
+            document.getElementById('adminLoginModal').classList.add('hidden');
+            document.getElementById('adminPassword').value = '';
+        }
+
+        function handleAdminLogin(event) {
+            event.preventDefault();
+            const password = document.getElementById('adminPassword').value;
+            
+            if (password === '12345') {
+                hideAdminLogin();
+                showAdminPanel();
+            } else {
+                alert('Incorrect password!');
+            }
+        }
+
+        function showAdminPanel() {
+            document.getElementById('adminPanel').classList.remove('hidden');
+            updateAdminVideoList();
+            updateLogoPreview();
+        }
+
+        function handleLogoUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        companyLogo = e.target.result;
+                        updateAllLogos();
+                        updateLogoPreview();
+                        alert('Logo uploaded successfully from gallery!');
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select a valid image file.');
+                }
+            }
+        }
+
+        function uploadLogoUrl(event) {
+            event.preventDefault();
+            const logoUrl = document.getElementById('logoUrl').value;
+            
+            if (logoUrl) {
+                companyLogo = logoUrl;
+                updateAllLogos();
+                updateLogoPreview();
+                document.getElementById('logoUrl').value = '';
+                alert('Logo updated successfully from URL!');
+            }
+        }
+
+        function updateAllLogos() {
+            const logos = ['companyLogo', 'heroLogo', 'footerLogo'];
+            logos.forEach(logoId => {
+                const logoElement = document.getElementById(logoId);
+                if (companyLogo) {
+                    logoElement.src = companyLogo;
+                    logoElement.classList.remove('hidden');
+                } else {
+                    logoElement.classList.add('hidden');
+                }
+            });
+        }
+
+        function updateLogoPreview() {
+            const preview = document.getElementById('logoPreview');
+            if (companyLogo) {
+                preview.innerHTML = `<img src="${companyLogo}" alt="Logo Preview" class="h-16 w-auto rounded">`;
+            } else {
+                preview.innerHTML = '<span class="text-gray-500 text-sm">No logo uploaded</span>';
+            }
+        }
+
+        function hideAdminPanel() {
+            document.getElementById('adminPanel').classList.add('hidden');
+        }
+
+        function handleVideoUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                if (file.type.startsWith('video/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        currentVideoFile = {
+                            name: file.name,
+                            size: (file.size / (1024 * 1024)).toFixed(2) + ' MB',
+                            data: e.target.result
+                        };
+                        
+                        // Show preview
+                        document.getElementById('videoPreview').classList.remove('hidden');
+                        document.getElementById('videoInfo').innerHTML = `
+                            <strong>${currentVideoFile.name}</strong><br>
+                            <span class="text-gray-500">Size: ${currentVideoFile.size}</span>
+                        `;
+                        
+                        // Clear URL field
+                        document.getElementById('videoUrl').value = '';
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    alert('Please select a valid video file.');
+                }
+            }
+        }
+
+        function addVideo(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('videoTitle').value;
+            const description = document.getElementById('videoDescription').value;
+            const url = document.getElementById('videoUrl').value;
+            
+            // Check if we have either a file or URL
+            if (!currentVideoFile && !url) {
+                alert('Please either upload a video file or provide a video URL.');
+                return;
+            }
+            
+            const newVideo = {
+                id: Date.now(),
+                title: title,
+                description: description,
+                url: currentVideoFile ? currentVideoFile.data : url,
+                type: currentVideoFile ? 'uploaded' : 'url',
+                fileName: currentVideoFile ? currentVideoFile.name : null
+            };
+            
+            videos.push(newVideo);
+            updateVideoGallery();
+            updateAdminVideoList();
+            
+            // Clear form
+            document.getElementById('videoTitle').value = '';
+            document.getElementById('videoDescription').value = '';
+            document.getElementById('videoUrl').value = '';
+            document.getElementById('videoFile').value = '';
+            document.getElementById('videoPreview').classList.add('hidden');
+            currentVideoFile = null;
+            
+            alert('Video added successfully!');
+        }
+
+        function deleteVideo(id) {
+            if (confirm('Are you sure you want to delete this video?')) {
+                videos = videos.filter(video => video.id !== id);
+                updateVideoGallery();
+                updateAdminVideoList();
+            }
+        }
+
+        function updateVideoGallery() {
+            const gallery = document.getElementById('videoGallery');
+            gallery.innerHTML = '';
+            
+            videos.forEach(video => {
+                let videoContent = '';
+                let watchButton = '';
+                
+                if (video.type === 'uploaded' && video.url !== '#') {
+                    // For uploaded videos, show actual video preview
+                    videoContent = `
+                        <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-48 rounded-lg relative overflow-hidden">
+                            <video class="w-full h-full object-cover rounded-lg" preload="metadata">
+                                <source src="${video.url}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                                <i class="fas fa-play-circle text-5xl text-white hover:text-purple-200 transition-colors cursor-pointer"></i>
+                            </div>
+                        </div>
+                    `;
+                    watchButton = `
+                        <button onclick="playVideo('${video.url}', '${video.title}')" class="inline-flex items-center px-4 py-2 bg-alien-purple text-white rounded-lg text-sm font-medium hover:bg-alien-purple-dark transition">
+                            <i class="fas fa-play mr-2"></i>Play Video
+                        </button>
+                    `;
+                } else if (video.url !== '#') {
+                    // For URL videos
+                    videoContent = `
+                        <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-48 rounded-lg flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-play-circle text-5xl text-alien-purple hover:text-alien-purple-dark transition-colors cursor-pointer"></i>
+                            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all"></div>
+                        </div>
+                    `;
+                    watchButton = `
+                        <a href="${video.url}" target="_blank" class="inline-flex items-center px-4 py-2 bg-alien-purple text-white rounded-lg text-sm font-medium hover:bg-alien-purple-dark transition">
+                            <i class="fas fa-external-link-alt mr-2"></i>Watch Video
+                        </a>
+                    `;
+                } else {
+                    // For sample videos
+                    videoContent = `
+                        <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-48 rounded-lg flex items-center justify-center mb-4 relative overflow-hidden">
+                            <i class="fas fa-play-circle text-5xl text-alien-purple hover:text-alien-purple-dark transition-colors cursor-pointer"></i>
+                            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all"></div>
+                        </div>
+                    `;
+                }
+                
+                const videoCard = `
+                    <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow">
+                        ${videoContent}
+                        <h3 class="font-semibold text-lg text-gray-900 mb-2">${video.title}</h3>
+                        <p class="text-gray-600 text-sm mb-3">${video.description}</p>
+                        ${video.fileName ? `<p class="text-xs text-purple-600 mb-2"><i class="fas fa-file-video mr-1"></i>${video.fileName}</p>` : ''}
+                        ${watchButton}
+                    </div>
+                `;
+                gallery.innerHTML += videoCard;
+            });
+        }
+
+        function playVideo(videoUrl, title) {
+            // Create modal for video playback
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-xl max-w-4xl w-full max-h-full overflow-hidden">
+                    <div class="flex justify-between items-center p-4 border-b">
+                        <h3 class="text-xl font-semibold">${title}</h3>
+                        <button onclick="this.closest('.fixed').remove()" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <video controls class="w-full max-h-96 rounded-lg">
+                            <source src="${videoUrl}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        function updateAdminVideoList() {
+            const list = document.getElementById('adminVideoList');
+            list.innerHTML = '';
+            
+            if (videos.length === 0) {
+                list.innerHTML = '<p class="text-gray-500 text-center py-8">No videos added yet</p>';
+                return;
+            }
+            
+            videos.forEach(video => {
+                const typeIcon = video.type === 'uploaded' ? 'fas fa-file-video' : 'fas fa-link';
+                const typeText = video.type === 'uploaded' ? 'Uploaded File' : 'External URL';
+                
+                const videoItem = `
+                    <div class="border border-gray-200 p-4 rounded-lg hover:shadow-md transition">
+                        <div class="flex justify-between items-start">
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <h4 class="font-semibold text-gray-900">${video.title}</h4>
+                                    <span class="ml-2 px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded-full">
+                                        <i class="${typeIcon} mr-1"></i>${typeText}
+                                    </span>
+                                </div>
+                                <p class="text-sm text-gray-600 mb-2">${video.description}</p>
+                                ${video.fileName ? `<p class="text-xs text-gray-500 mb-1"><i class="fas fa-file mr-1"></i>${video.fileName}</p>` : ''}
+                                ${video.url !== '#' ? `<a href="${video.url}" target="_blank" class="text-xs text-alien-purple hover:underline break-all">
+                                    <i class="fas fa-external-link-alt mr-1"></i>${video.type === 'uploaded' ? 'View File' : video.url}
+                                </a>` : ''}
+                            </div>
+                            <button onclick="deleteVideo(${video.id})" class="bg-red-500 text-white px-3 py-1 rounded text-sm hover:bg-red-600 transition ml-4">
+                                <i class="fas fa-trash mr-1"></i>Delete
+                            </button>
+                        </div>
+                    </div>
+                `;
+                list.innerHTML += videoItem;
+            });
+        }
+
+        function handleContactForm(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize the page
+        updateVideoGallery();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96d23a66d4d88749',t:'MTc1NDg1NzU4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
